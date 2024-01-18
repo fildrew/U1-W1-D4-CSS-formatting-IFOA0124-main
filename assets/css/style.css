@@ -1,6 +1,6 @@
 /* IMPOSTAZIONI GENERALI */
 html {
-  font-size: 65%;
+  font-size: 63.5%;
 }
 
 body {
@@ -17,15 +17,14 @@ body {
 
 /* HEADER */
 header {
-  background-color: #0093e9;
-  background-image: linear-gradient(180deg, #0093e9 0%, #80d0c7 100%);
+  background-color: #06466b;
+  background: linear-gradient(180deg, rgb(37 150 177) 0%, rgb(33 108 127) 68%);
   text-align: center;
   font-weight: bold;
   color: white;
   box-shadow: 0 2px 2px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.7em;
-  border-radius: 12px;
 }
 
 header div img {
@@ -45,11 +44,11 @@ header nav li a {
 }
 
 header nav li a :hover {
-  color: beige;
+  color: rgb(235, 235, 169);
 }
 
 header nav li a ::before {
-  content: normal;
+  content: icon;
 }
 
 /* MAIN */
@@ -70,9 +69,9 @@ section h2 {
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  letter-spacing: 0em;
+  letter-spacing: -0.03em;
   margin-bottom: 0.7em;
 }
 
@@ -88,9 +87,24 @@ h1 + p {
   color: #a0a0a0;
 }
 
-ul,
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
 ol {
-  margin-left: 2.5em;
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 a {
@@ -121,6 +135,7 @@ section {
   padding: 1em;
   margin-bottom: 2em;
 }
+
 /* TABELLE */
 table {
   margin-bottom: 2em;
@@ -160,16 +175,17 @@ tbody tr:last-of-type {
 input {
   padding: 5px;
   border: 0;
-  border-bottom: #333;
+  border-bottom: 1.5px dashed #333;
 }
 
 button {
   padding: 5px;
   background-color: #0093e9;
   border: 0;
-  color: #e3e3e3;
+  color: white;
   font-weight: bold;
 }
+
 /* ELEMENTI NELL'ASIDE */
 aside h2 {
   text-align: center;
@@ -179,18 +195,18 @@ aside h2 {
   text-transform: uppercase;
   margin-bottom: 1em;
 }
+
 aside div {
   background-color: #e3e3e3;
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
   padding: 1em;
-  border-radius: 12px;
 }
+
 aside div p:last-child {
   margin-bottom: 0;
   font-size: 0.8em;
   text-align: right;
-  border-radius: 12px;
 }
 
 /* FOOTER */
